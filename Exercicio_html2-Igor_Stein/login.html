@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        margin: 0;
+    }
+
+    hr {
+        width: 100%;
+        text-align: right;
+        margin-right: 0 0 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .login-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 2px rgb(0, 162, 255);
+        width: 350px;
+        text-align: center;
+    }
+
+    .login-container h2 {
+        font-size: 50px;
+        margin: 5px;
+        margin-bottom: 20px;
+        color: rgb(0, 162, 255);
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .input-manterlogin {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .input-cadastro {
+        text-align: right;
+        margin: 25px 5px 5px;
+    }
+
+    .btn-cadastro {
+        color: rgb(0, 162, 255);
+        cursor: pointer;
+    }
+
+    .btn-logar {
+        background-color: rgb(0, 162, 255);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .btn-logar:hover {
+        background-color: rgb(73, 179, 240);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <hr>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <label for="email">Seu e-mail</label>
+                <input type="text" id="email" name="email" placeholder="contato@htmlecsspro.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Sua senha</label>
+                <input type="password" name="password" id="password" placeholder="1234" required>
+            </div>
+            <div class="input-manterlogin">
+                <input type="checkbox" name="manter-login" id="manter-login">
+                <label for="manter-login">Manter-me logado</label>
+            </div>
+            <button type="submit" class="btn-logar">Logar</button>
+            <div class="input-cadastro">
+                <label for="cadastro">Ainda não tem conta?</label>
+                <button type="button" class="btn-cadastro">Cadastre-se</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
