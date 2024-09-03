@@ -1,0 +1,11 @@
+#cabecalho {
+    background-color: #26a9e1;
+    color: white;
+    font: 30pt Arial;
+    padding: 10px 100px;
+    border-radius: 10px;
+}
+
+#cabecalho #saudacao {
+    display: inline-flex;
+}
