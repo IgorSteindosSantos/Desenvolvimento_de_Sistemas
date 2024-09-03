@@ -1,11 +1,58 @@
+/* Estilo do cabeçalho */
 #cabecalho {
     background-color: #26a9e1;
     color: white;
-    font: 30pt Arial;
-    padding: 10px 100px;
+    font-size: 35pt;
+    padding: 25px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    margin-bottom: 20px;
 }
 
 #cabecalho #saudacao {
-    display: inline-flex;
+    font-weight: bold;
+}
+
+#cabecalho #horario {
+    font-weight: bold;
+}
+
+/* Estilo para a tabela */
+#tbAulas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para o painel */
+}
+
+/* Cabeçalho da tabela */
+#tbAulas th {
+    background-color: #4c77af;
+    color: white;
+    padding: 12px 15px;
+    text-transform: uppercase; /* Para dar destaque ao texto */
+    letter-spacing: 0.05em; /* Espaçamento entre letras */
+}
+
+/* Células da tabela */
+#tbAulas td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternar cores entre as linhas para facilitar a leitura */
+#tbAulas tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor suave */
+}
+
+#tbAulas tr:nth-child(odd) {
+    background-color: #eaf3fc;
 }
