@@ -71,8 +71,9 @@
     background-color: #eaf3fc;
 }
 
+/* Imagens ao lado da tabela */
 #anuncios {
-    width: 300px;
+    width: 20%;
 }
 
 #anuncios img {
