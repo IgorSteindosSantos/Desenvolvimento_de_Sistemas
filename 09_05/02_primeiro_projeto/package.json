@@ -1,0 +1,21 @@
+{
+  "name": "senai-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "database"
+  ],
+  "author": "Igor Stein",
+  "license": "ISC",
+  "description": "API HTTP para gerenciar itens do banco de dados",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^1.0.0"
+  }
+}
